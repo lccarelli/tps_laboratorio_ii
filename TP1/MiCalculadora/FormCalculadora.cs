@@ -29,7 +29,7 @@ namespace MiCalculadora
         /// <summary>
         ///  Boton de cerrar aplicación.
         /// </summary>
-        /// <param name="sender">Instancia del boton cerrar.</param>
+        /// <param name="sender">Instancia del boton.</param>
         /// <param name="e">Informacion del evento.</param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -39,7 +39,7 @@ namespace MiCalculadora
         /// <summary>
         ///  Boton convierte un numero de decimal a binario.
         /// </summary>
-        /// <param name="sender">Instancia del boton cerrar.</param>
+        /// <param name="sender">Instancia del boton.</param>
         /// <param name="e">Informacion del evento.</param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
@@ -50,7 +50,7 @@ namespace MiCalculadora
         /// <summary>
         ///  Boton convierte de binario a decimal.
         /// </summary>
-        /// <param name="sender">Instancia del boton cerrar.</param>
+        /// <param name="sender">Instancia del boton.</param>
         /// <param name="e">Informacion del evento.</param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
@@ -61,7 +61,7 @@ namespace MiCalculadora
         /// <summary>
         ///  Boton limpia los textBox de la pantalla.
         /// </summary>
-        /// <param name="sender">Instancia del boton cerrar.</param>
+        /// <param name="sender">Instancia del boton.</param>
         /// <param name="e">Informacion del evento.</param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
@@ -82,7 +82,7 @@ namespace MiCalculadora
         /// <summary>
         ///  Boton de operar llama al metodo Operar Calculo.
         /// </summary>
-        /// <param name="sender">Instancia del boton cerrar.</param>
+        /// <param name="sender">Instancia del boton.</param>
         /// <param name="e">Informacion del evento.</param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
@@ -127,7 +127,7 @@ namespace MiCalculadora
         /// <summary>
         ///  Metodo que limpia pantalla cuando se termina de iniciar el formulario y antes de que se dibuje.
         /// </summary>
-        /// <param name="sender">Instancia del boton cerrar.</param>
+        /// <param name="sender">Instancia del boton.</param>
         /// <param name="e">Informacion del evento.</param>
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
@@ -148,7 +148,7 @@ namespace MiCalculadora
         /// <summary>
         ///  Metodo que cierra el formulario desde la 'x'.
         /// </summary>
-        /// <param name="sender">Instancia del boton cerrar.</param>
+        /// <param name="sender">Instancia del form.</param>
         /// <param name="e">Informacion del evento.</param>
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
