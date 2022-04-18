@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 
@@ -13,8 +7,20 @@ namespace MiCalculadora
 {
     public partial class FormCalculadora : Form
     {
-        private List<string> listOperadores = new() { "+", "-", "*", "/" };
+        #region Atributos
 
+        private List<string> listOperadores = new() { "+", "-", "*", "/" };
+        private const string MESSAGE_INVALID_VALUE = "Valor inválido";
+
+        #endregion
+
+        #region Constructores
+
+        /// <summary>
+        ///  Constructor clase FormCalculadora. Inicializa 
+        /// </summary>
+        /// <param name="sender">Instancia del boton.</param>
+        /// <param name="e">Informacion del evento.</param>
         public FormCalculadora()
         {
             InitializeComponent();
@@ -25,6 +31,10 @@ namespace MiCalculadora
                 this.cmbOperador.Items.Add(operador);
             }
         }
+
+        #endregion
+
+        #region Métodos
 
         /// <summary>
         ///  Boton de cerrar aplicación.
@@ -86,19 +96,16 @@ namespace MiCalculadora
         /// <param name="e">Informacion del evento.</param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            const string MIN_VALUE = "-1,7976931348623157E+308";
-            const string MESSAGE_MIN_VALUE = "Valor inválido";
             string operadorSeleccionado = (string)cmbOperador.SelectedItem;
             string result = Operar(txtNumero1.Text, txtNumero2.Text, operadorSeleccionado).ToString();
 
-            if (result is not MIN_VALUE)
+            if (result != double.MinValue.ToString())
             {
                 lblResultado.Text = result;
-            }
-            else 
+            }else 
             {
-                lblResultado.Text = MESSAGE_MIN_VALUE;
-            }
+                lblResultado.Text = MESSAGE_INVALID_VALUE;
+            };
         
             MostrarOperaciones($"{txtNumero1.Text} {operadorSeleccionado} {txtNumero2.Text} = {lblResultado.Text}");
         }
@@ -111,7 +118,17 @@ namespace MiCalculadora
         /// <param name="operador">string contiene el operador del calculo.</param>
         private static double Operar(string numero1, string numero2, string operador) 
         {
-            char operadorChar = operador is null ? '+' : char.Parse(operador);
+            char operadorChar;
+
+            if (operador is null)
+            {
+                operadorChar = '+';
+            }
+            else 
+            {
+                operadorChar = char.Parse(operador);
+            }
+
             return Calculadora.Operar(new Operando(numero1), new Operando(numero2), operadorChar);
         }
 
@@ -162,5 +179,6 @@ namespace MiCalculadora
             }
 
         }
+        #endregion
     }
 }
