@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\54113\\Documents\\GitHub\\tps_laboratorio_ii\\TP1\\MiCalculadora\\MiCalculadora.csproj",
+      "projectUniqueName": "C:\\Users\\54113\\Documents\\tps_laboratorio_ii\\TP1\\MiCalculadora\\MiCalculadora.csproj",
       "projectName": "MiCalculadora",
-      "projectPath": "C:\\Users\\54113\\Documents\\GitHub\\tps_laboratorio_ii\\TP1\\MiCalculadora\\MiCalculadora.csproj",
+      "projectPath": "C:\\Users\\54113\\Documents\\tps_laboratorio_ii\\TP1\\MiCalculadora\\MiCalculadora.csproj",
       "packagesPath": "C:\\Users\\54113\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\54113\\Documents\\GitHub\\tps_laboratorio_ii\\TP1\\MiCalculadora\\obj\\",
+      "outputPath": "C:\\Users\\54113\\Documents\\tps_laboratorio_ii\\TP1\\MiCalculadora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\54113\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\54113\\Documents\\GitHub\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\54113\\Documents\\GitHub\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj"
+            "C:\\Users\\54113\\Documents\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\54113\\Documents\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj"
             }
           }
         }

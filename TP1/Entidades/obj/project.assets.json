@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\54113\\Documents\\GitHub\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\54113\\Documents\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\54113\\Documents\\GitHub\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj",
+      "projectPath": "C:\\Users\\54113\\Documents\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\54113\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\54113\\Documents\\GitHub\\tps_laboratorio_ii\\TP1\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\54113\\Documents\\tps_laboratorio_ii\\TP1\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\54113\\AppData\\Roaming\\NuGet\\NuGet.Config",
